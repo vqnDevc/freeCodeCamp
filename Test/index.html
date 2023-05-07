@@ -7,12 +7,35 @@
     <title>Little Boy</title>
 
     <style>
+        body {
+            height: 1000px;
+        }
+        
+        .header {
+            background-color: #333333;
+            width: 100%;
+            margin: 0;
+        }
+
+        .image{
+            display: inline-block;
+            height: inherit;
+            width: 50.8px;
+        }
+
+        img {
+            padding: 3px 0 0 3px;
+            width: 100%;
+            display: block;
+            opacity: 80%;
+        }
+
         ul {
+            display: inline-block;
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333333;
         }    
 
         li {
@@ -28,7 +51,7 @@
         }
 
         li a:hover {
-        background-color: #111111;
+            background-color: #111111;
         }
 
         table {
@@ -42,6 +65,7 @@
           border: 1px solid #000000;
           border-color: #96D4D4;
           text-align: left;
+          font-weight: 600;
           padding: 8px;
         }
         
@@ -56,18 +80,26 @@
         thead {color: #00EE00; font-size: 22px;}
         tbody {color: #000088}
         tfoot {color: #FF0000}
+
+        table{
+            margin: 10px 0;
+        }
     </style>
     
 </head>
 <body>
-    <div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-    </div>
+    <header>
+        <div class="header">
+            <a title="little boy" target="_blank" href="https://www.facebook.com/Vaquynne.uet" class="image"><img src="image/littel_boy.jpg" alt="A little boy with steadfast eyes"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+        </div>
+    </header>
+
     <div>
         <table>
             <thead>
@@ -118,5 +150,10 @@
             </tfoot>
           </table>
     </div>
+    <!-- <div>
+        <iframe src="https://freecatphotoapp.com" title="Trang cá nhân" name="iframe_a" height="300px" width="50%"></iframe>
+
+        <p><a href="https://www.freecodecamp.org/news/terms-of-service/" target="iframe_a">Facebook</a></p>
+    </div> -->
 </body>
 </html>
