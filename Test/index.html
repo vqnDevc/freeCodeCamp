@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="image/logo_littleboy.ico">
     <title>Little Boy</title>
@@ -43,9 +43,11 @@
         }
 
         li a {
+            font-family: arial, sans-serif;
             display: block;
             color: white;
             text-align: center;
+            font-weight: 500;
             padding: 16px;
             text-decoration: none;
         }
@@ -59,30 +61,38 @@
           border-collapse: collapse;
           /* border-spacing: 10px; */
           width: 100%;
+          margin: 10px 0;
         }
         
         td, th {
           border: 1px solid #000000;
-          border-color: #96D4D4;
           text-align: left;
           font-weight: 600;
           padding: 8px;
         }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
 
-        tbody>tr:hover, tfoot>tr:hover {
+        tbody>tr:hover, tfoot>tr:hover, .entity>tr:hover, .entity tr:nth-child(even):hover {
             background-color: #D6EEEE;
         }
 
-        thead {color: #00EE00; font-size: 22px;}
+        thead {color: #109810; background-color: #dddddd ;font-size: 22px;}
         tbody {color: #000088}
         tfoot {color: #FF0000}
 
-        table{
-            margin: 10px 0;
+        .entity table{
+            border-collapse: unset;
+        }
+
+        .entity{
+            margin: 30px 0;
+        }
+
+        .col1 {
+            text-align: center;
+        }
+
+        .entity tr:nth-child(even) {
+            background-color: #eee;
         }
     </style>
     
@@ -149,6 +159,95 @@
                 </tr>
             </tfoot>
           </table>
+    </div>
+
+    <div class="entity">
+        <table style="max-width: 80%; margin: 0 140px;">
+            <colgroup>
+                <col span="1" style="width:5%;">
+                <col span="1" style="width:60%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="col1">Result</th>
+                    <th>Description</th>
+                    <th>Entity Name</th>
+                    <th>Entity Number</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="col1"></td>
+                <td>non-breaking space</td>
+                <td>&amp;nbsp;</td>
+                <td>&amp;#160;</td>
+            </tr>
+            <tr>
+                <td class="col1">&lt;</td>
+                <td>less than</td>
+                <td>&amp;lt;</td>
+                <td>&amp;#60;</td>
+            </tr>
+            <tr>
+                <td class="col1">&gt;</td>
+                <td>greater than</td>
+                <td>&amp;gt;</td>
+                <td>&amp;#62;</td>
+            </tr>
+            <tr>
+                <td class="col1">&amp;</td>
+                <td>ampersand</td>
+                <td>&amp;amp;</td>
+                <td>&amp;#38;</td>
+            </tr>
+            <tr>
+                <td class="col1">&quot;</td>
+                <td>double quotation mark</td>
+                <td>&amp;quot;</td>
+                <td>&amp;#34;</td>
+            </tr>
+            <tr>
+                <td class="col1">&apos;</td>
+                <td>single quotation mark</td>
+                <td>&amp;apos;</td>
+                <td>&amp;#39;</td>
+            </tr>
+            <tr>
+                <td class="col1">&cent;</td>
+                <td>cent</td>
+                <td>&amp;cent;</td>
+                <td>&amp;#162;</td>
+            </tr>
+            <tr>
+                <td class="col1">&pound;</td>
+                <td>pound</td>
+                <td>&amp;pound;</td>
+                <td>&amp;#163;</td>
+            </tr>
+            <tr>
+                <td class="col1">&yen;</td>
+                <td>yen</td>
+                <td>&amp;yen;</td>
+                <td>&amp;#165;</td>
+            </tr>
+            <tr>
+                <td class="col1">&euro;</td>
+                <td>euro</td>
+                <td>&amp;euro;</td>
+                <td>&amp;#8264;</td>
+            </tr>
+            <tr>
+                <td class="col1">&copy;</td>
+                <td>copyright</td>
+                <td>&amp;copy;</td>
+                <td>&amp;#169;</td>
+            </tr>
+            <tr>
+                <td class="col1">&reg;</td>
+                <td>registered trademark</td>
+                <td>&amp;reg;</td>
+                <td>&amp;#174;</td>
+            </tr>
+        </table>
     </div>
     <!-- <div>
         <iframe src="https://freecatphotoapp.com" title="Trang cá nhân" name="iframe_a" height="300px" width="50%"></iframe>
