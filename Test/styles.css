@@ -1,17 +1,31 @@
 @media (prefers-reduced-motion: no-preference) {
     * {
+        /* margin-left: 0; */
       scroll-behavior: smooth;
     }
   }
 
 body {
     height: 2500px;
+    background-image: url(image/DSKK.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-clip: padding-box; */
+}
+
+header{
+    padding: 0;
+    margin-left: -7px;
+    margin-right: -7px;
 }
 
 .header {
-    background-color: #333333;
+    background-image: linear-gradient(60deg, #4dda86a0 30%, #0ed3d3a0, #331987a0);
+    border-bottom: 1px solid #ffffffb8;
     width: 100%;
-    margin: 0;
+    margin: -7px 0 0 0;
 }
 
 .image{
@@ -41,16 +55,26 @@ li {
 
 li a {
     font-family: arial, sans-serif;
+    font-weight: 600;
     display: block;
-    color: white;
+    color: black;
+    background-image: linear-gradient(60deg, #331987,#0ed3d3);
+    border-radius: 10px;
+    border: 0.8px solid #eee;
+    width: 95px;
+    box-sizing: border-box;
     text-align: center;
-    font-weight: 500;
-    padding: 16px;
+    text-shadow: 0 1px #eee;
     text-decoration: none;
+    margin: 0 2px;
+    padding: 16px;
 }
 
 li a:hover {
-    background-color: #111111;
+    background-image: linear-gradient(60deg, #f21c1c 30%, #4dda86);
+    border-color: #000000;
+    color: #ffffff;
+    text-shadow: 0 1px #010712;
 }
 
 table {
@@ -62,18 +86,19 @@ table {
 }
 
 td, th {
-  border: 1px solid #000000;
+  border: 1px solid #fbfdfb;
   text-align: left;
   font-weight: 600;
   padding: 8px;
 }
 
 tbody>tr:hover, tfoot>tr:hover, .entity>tr:hover, .entity tr:nth-child(even):hover {
-    background-color: #D6EEEE;
+    background-color: #49fd6aa0;
+    color: #000000;
 }
 
-thead {color: #109810; background-color: #dddddd ;font-size: 22px;}
-tbody {color: #000088}
+thead {color: #4f09e6; background-image: linear-gradient(60deg, #4dda86 30%, #0ed3d3);font-size: 22px;}
+tbody {color: #ffffff}
 tfoot {color: #FF0000}
 
 .entity table{
@@ -88,15 +113,16 @@ tfoot {color: #FF0000}
     text-align: center;
 }
 
-.entity tr:nth-child(even) {
-    background-color: #eee;
+tr:nth-child(even) {
+    background-color: #7be7aa50;
 }
 
 .oop {
+
     margin: 30px 0 ;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: #eee;
+    background-color: #eeeeee;
     box-shadow: 0 0 5px 0 black;
 }
 
