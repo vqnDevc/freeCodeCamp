@@ -30,22 +30,25 @@ header{
 
 .image{
     display: inline-block;
-    height: inherit;
+    overflow: hidden;
+    margin: 0;
     width: 50.8px;
 }
 
 img {
-    padding: 3px 0 0 3px;
     width: 100%;
-    display: block;
-    opacity: 80%;
+    /* opacity: 80%; */
+    padding: 0;
+    border: 1px solid #eee;
+    /* padding-inline: 2px; */
+    margin-right: 2px;
 }
 
 ul {
-    display: inline-block;
+    /* display: inline-block; */
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 5px;
+    padding: 6px 0 0 0;
     overflow: hidden;
 }    
 
@@ -53,28 +56,28 @@ li {
     float: left;
 }
 
-li a {
+li a:not(.image) {
     font-family: arial, sans-serif;
     font-weight: 600;
     display: block;
-    color: black;
+    color: white;
     background-image: linear-gradient(60deg, #331987,#0ed3d3);
     border-radius: 10px;
     border: 0.8px solid #eee;
     width: 95px;
     box-sizing: border-box;
     text-align: center;
-    text-shadow: 0 1px #eee;
+    text-shadow: 0 0 10px #f00;
     text-decoration: none;
-    margin: 0 2px;
+    margin: 0 3px;
     padding: 16px;
 }
 
-li a:hover {
+li a:hover:not(.image) {
     background-image: linear-gradient(60deg, #f21c1c 30%, #4dda86);
     border-color: #000000;
     color: #ffffff;
-    text-shadow: 0 1px #010712;
+    text-shadow: 0 0 10px #010712;
 }
 
 table {
@@ -95,11 +98,24 @@ td, th {
 tbody>tr:hover, tfoot>tr:hover, .entity>tr:hover, .entity tr:nth-child(even):hover {
     background-color: #49fd6aa0;
     color: #000000;
+    text-shadow: 0 0 5px #eee;
 }
 
-thead {color: #4f09e6; background-image: linear-gradient(60deg, #4dda86 30%, #0ed3d3);font-size: 22px;}
-tbody {color: #ffffff}
-tfoot {color: #FF0000}
+thead {
+    color: #3510af; 
+    text-shadow: 1px 1px black, 0 0 5px #eee;
+    background-image: linear-gradient(60deg, #4dda86 30%, #0ed3d3);
+    font-size: 22px;
+
+}
+tbody {
+    color: #ffffff;
+    text-shadow: 1px 1px black, 0 0 5px black;
+}
+
+tfoot {color: #FF0000; 
+    text-shadow: 0 0 5px black, 0 0 10px #3510af;
+}
 
 .entity table{
     border-collapse: unset;
@@ -107,6 +123,8 @@ tfoot {color: #FF0000}
 
 .entity{
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .col1 {
