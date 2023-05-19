@@ -75,6 +75,7 @@ li a:not(.image) {
     text-decoration: none;
     margin: 0 3px;
     padding: 16px;
+    transition: all 1.5s;
 }
 
 li a:hover:not(.image) {
@@ -146,6 +147,7 @@ tr:nth-child(even) {
     border-radius: 10px;
     background-color: #eeeeee;
     box-shadow: 0 0 5px 0 black;
+    overflow: visible;
 }
 
 .gohome {
